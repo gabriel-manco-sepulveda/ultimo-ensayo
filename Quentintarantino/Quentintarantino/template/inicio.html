@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA CON DJANGO</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">QUENTIN TARANTINO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="registro.html">registro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.sensacine.com/actores/actor-15570/filmografia/" target="blank">Filmografía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.abc.es/play/cine/noticias/abci-premios-oscar-2020-202002080115_noticia.html" target="blank">Premios</a>
+                  </li>
+          </nav>
+    </header>
+
+    <main>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="{% static 'materiales/Quentin peliculas.jpg' %}" class="d-block w-100" alt="banner1">
+              </div>
+          </div>
+      </div>
+
+      <div class="container">
+          <div class="row">
+              <div class="col-12 col-md-6">
+                  <h1>Director</h1>
+                  <p class="parrafo">
+                    Quentin Jerome Tarantino ; nacido el 27 de marzo de, 1963) [1] es un realizador y actor. Sus películas se caracterizan por historias no lineales , estetización de la violencia , escenas extensas de diálogo , elenco de conjuntos , referencias a la cultura popular y una amplia variedad de otras películas, bandas sonoras que contienen principalmente canciones y partituras de la década de 1960 a la década de 1980, historia alternativa y caracteristicas depelícula neo-noir 
+                    Comenzó su carrera como cineasta independiente con el lanzamiento de Reservoir Dogs en 1992, que fue financiado con dinero de la venta de su guión True Romance . Empire consideró a Reservoir Dogs la "Mejor película independiente de todos los tiempos". Su segunda película, Pulp Fiction (1994), una película de comedia criminal, fue un gran éxito tanto entre los críticos como entre el público. [2] [3] También escribió el guión y protagonizó la película de vampiros From Dusk Till Dawn (1996). Tarantino rindió homenaje a las películas de blaxploitation de la década de 1970 con Jackie Brown (1997), una adaptación deLa novela de Elmore Leonard , Ron Punch .
+                  </p>
+                  <hr>
+                  <img src="{% static 'materiales/imagen historia.jpg' %}" alt="alta1" class="img-fluid">
+                  <hr>
+                  <h1>Historia</h1>
+                  <p>
+                    Nació en Knoxville, Tennessee, en 1963, hijo de Tony Tarantino, actor y músico amateur nacido en Queens, y Connie McHugh, una enfermera.6​ Su padre es de ascendencia italiana (su bisabuelo era originario de Palermo)7​ y su madre es de ascendencia inglesa, irlandesa y alemana;7​8​9​ Tarantino ha afirmado que posee ascendencia cheroqui por parte materna, aunque esto no ha sido verificado.7​10​ El nombre de Tarantino hace referencia a un personaje de una serie de televisión, el herrero mestizo Quint interpretado por Burt Reynolds en Gunsmoke. Fue criado por su madre, ya que sus padres se separaron antes de nacer.11​ Cuando tenía dos años, se trasladaron a Torrance, al sur de Los Ángeles, y más tarde al barrio de Harbor City, donde asistió a la escuela superior Fleming Junior en Lomita, y tomó clases de teatro.11  
+                  </p>
+                  <img src="{% static 'materiales/images (1).jpg' %}" alt="alta2" class="imagen2">
+              </div>
+              <div class="col-12 col-md-6">
+                  <h1>pulp fiction</h1>
+                  <img src="{% static 'materiales/imagen pulp fiction.png' %}" alt="imagen pulp fiction" class="img-fluid">
+                  <p>
+                    Death Proof (conocida en Hispanoamérica como A prueba de muerte) es una película estadounidense de acción y suspenso del año 2007 escrita y dirigida por Quentin Tarantino. La cinta se centra en un psicópata doble de riesgo que asalta chicas jóvenes antes de asesinarlas con su coche de especialista «a prueba de muerte». La película es un tributo a los muscle cars y los géneros exploitation y slasher de los años 1970. Fue protagonizada por Kurt Russell, Zoë Bell, Rosario Dawson, Vanessa Ferlito, Jordan Ladd, Sydney Tamiia Poitier, Tracie Thoms, Mary-Elizabeth Winstead y Rose McGowan.
+                  </p>
+                  <video src="{% static 'materiales/videoscena.mp4' %}" controls class="img-fluid"></video>
+                  <p>
+                    Seis años después, en la película dividida en dos partes Kill Bill (2003, 2004), ofreció un relato de venganza que aúna tradiciones cinematográficas del cine de kung-fu, artes marciales japonesas, spaghetti western y terror italiano. En 2007 dirigió Death Proof, una de las entregas de Grindhouse junto a su amigo Robert Rodriguez, y dos años después estrenó un proyecto largamente pospuesto y bien valorado por la crítica,[cita requerida] Inglourious Basterds, que cuenta una historia ficticia alternativa sobre dos planes para asesinar a los líderes políticos de la Alemania nazi. En 2012 con Django Unchained Tarantino filmó su primer wéstern, centrado en el mundo esclavista del sur de Estados Unidos justo antes de la Guerra de Secesión, y que con una recaudación de 425 millones de dólares se alzó como su película con mayores ganancias en taquilla. Su octavo largometraje, The Hateful Eight (2015), es un wéstern de misterio en el que rinde homenaje a las películas de gran presupuesto de 1960 y 1970 y fue rodado en película de 70 mm.
+                  </p>
+                  <h2>Soundtrack Pulp Fiction</h2>
+                  <audio src="{% static 'materiales/audio.mp3' %}" controls></audio>
+                   <p>Está protagonizada por Harvey Keitel, Tim Roth, Chris Penn, Steve Buscemi, Lawrence Tierney y Michael Madsen. La actuación de Tarantino es de menor trascendencia, como también la del escritor exconvicto, Eddie Bunker. Reservoir Dogs incorpora muchos temas y estéticas que se transformarían y se darían a conocer como sellos propios de Tarantino, como director y guionista.
+                   </p>
+              </div>
+
+          </div> 
+
+      </div>
+  </main>
+<footer class="text-center">
+<p>Gabriel Manco Sepúlveda</p>
+<p>gabomansep@gmail.com</p>
+<p>3206571719</p>
+<p>Medellín Colombia</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body >
+
+</html>
